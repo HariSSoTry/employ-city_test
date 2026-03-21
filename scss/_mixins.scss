@@ -1,0 +1,104 @@
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin small-mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin very-small-mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin adaptive-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / 1920));
+    
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / 1920));
+    }
+}
+
+@mixin custom-scrollbar($width: 7px, $track-color: #3D4050, $thumb-color: #3E9CDC) {
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: $track-color;
+        border-radius: 3px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $thumb-color;
+        border-radius: 3px;
+        
+        &:hover {
+            background: lighten($thumb-color, 10%);
+        }
+    }
+}
+
+@mixin gradient-text($color1, $color2) {
+    background: linear-gradient(135deg, $color1, $color2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin card-shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    
+    &:hover {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@mixin transition($property: all, $duration: 0.3s, $easing: ease) {
+    transition: $property $duration $easing;
+}

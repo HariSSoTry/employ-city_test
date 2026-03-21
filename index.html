@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&family=Raleway:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">LoremIpsum<span>.Net</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link" data-target="hero">Бизнес</a></li>
+                    <li class="nav__item"><a href="#hero" class="nav__link" data-target="hero">О нас</a></li>
+                    <li class="nav__item"><a href="#order" class="nav__link" data-target="order">Цены</a></li>
+                    <li class="nav__item"><a href="#order" class="nav__link" data-target="order">Оформить заказ</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger" aria-label="Меню">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Промо-блок -->
+        <section class="promo" id="hero">
+            <div class="promo__image"></div>
+            <div class="promo__container">
+                <!-- Заголовок -->
+                <h1 class="promo__title">
+                    <span class="blue">Lorem ipsum</span> 
+                    <span class="black">dolor sit ametconsectetur</span> 
+                    <span class="blue">adipiscing</span>
+                </h1>
+                
+                <div class="promo__content">
+                    <p class="promo__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                    <ul class="promo__list">
+                        <li class="promo__list-item">Totam rem aperiam eaque ipsa</li>
+                        <li class="promo__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+                        <li class="promo__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                
+                <!-- Кнопки -->
+                <div class="promo__actions">
+                    <button class="button button--primary">заказать</button>
+                    <button class="button button--secondary">подробнее</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Оформление заказа -->
+        <section class="order" id="order">
+            <div class="order__image"></div>
+            <div class="order__overlay"></div>
+            
+            <div class="container order__container">
+                <h2 class="order__title">Оформление <span>Заказа</span></h2>
+                <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+
+                <!-- Шаги -->
+                <div class="steps-wrapper">
+                    <div class="steps">
+                        <div class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icons/search.svg" alt="Поиск" width="34" height="34">
+                            </div>
+                            <p class="steps__text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        
+                        <div class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icons/percent.svg" alt="Процент" width="31" height="31">
+                            </div>
+                            <p class="steps__text">Сonsecteturadipiscing elit</p>
+                        </div>
+                        
+                        <div class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icons/file.svg" alt="Файл" width="39" height="42">
+                            </div>
+                            <p class="steps__text">Sed do eiusmod tempor</p>
+                        </div>
+                        
+                        <div class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icons/email.svg" alt="Email" width="36" height="29">
+                            </div>
+                            <p class="steps__text">Esse cillum dolore eu fugiat</p>
+                        </div>
+                        
+                        <div class="steps__item">
+                            <div class="steps__icon">
+                                <img src="img/icons/money.svg" alt="Деньги" width="39" height="26">
+                            </div>
+                            <p class="steps__text">Excepteur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                    <div class="steps-dots">
+                        <div class="steps-dots__group">
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                        </div>
+
+                        <div class="steps-dots__group">
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                        </div>
+
+                        <div class="steps-dots__group">
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                        </div>
+
+                        <div class="steps-dots__group">
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                            <span class="steps-dots__dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Форма -->
+                <form class="order-form" action="#" method="post">
+                    <div class="order-form__row">
+                        <div class="order-form__group order-form__group--custom-select">
+                            <!-- Основной селект (видимая часть) -->
+                            <div class="custom-select">
+                                <div class="custom-select__header">
+                                    <span class="custom-select__selected">Выберите тип системы</span>
+                                    <svg class="custom-select__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="#272733" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                
+                                <div class="custom-select__dropdown">
+                                    <ul class="custom-select__list">
+                                        <li class="custom-select__item" data-value="1">Sed ut perspiciatis</li>
+                                        <li class="custom-select__item" data-value="2">Nemo enim ipsam</li>
+                                        <li class="custom-select__item" data-value="3">Et harum quidem</li>
+                                        <li class="custom-select__item" data-value="4">Temporibus autem</li>
+                                        <li class="custom-select__item" data-value="5">Itaque earum rerum</li>
+                                    </ul>
+                                    
+                                    <div class="custom-select__scrollbar">
+                                        <div class="custom-select__scrollbar-track">
+                                            <div class="custom-select__scrollbar-thumb" style="height: 53px; top: 0;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <select name="type" class="order-form__select-native" style="display: none;">
+                                <option value="" disabled selected>Выберите тип системы</option>
+                                <option value="1">Sed ut perspiciatis</option>
+                                <option value="2">Nemo enim ipsam</option>
+                                <option value="3">Et harum quidem</option>
+                                <option value="4">Temporibus autem</option>
+                                <option value="5">Itaque earum rerum</option>
+                            </select>
+                        </div>
+                        
+                        <div class="order-form__group">
+                            <input class="order-form__input" type="email" name="email" placeholder="Ваш e-mail" required>
+                        </div>
+                        
+                        <div class="order-form__group">
+                            <input class="order-form__input" type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                    </div>
+
+                    <!-- Ползунок и кнопка прикрепить файл -->
+                    <div class="order-form__range-wrapper">
+                        <!-- Ползунок -->
+                        <div class="order-form__range-block">
+                            <div class="order-form__range-info">
+                                <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                                <span class="order-form__range-value">75%</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="75" class="order-form__range" name="progress">
+                        </div>
+                        
+                        <!-- Загрузка файла -->
+                        <div class="order-form__file-wrapper">
+                            <input type="file" name="file" id="file-upload" class="order-form__file-input">
+                            <label for="file-upload" class="order-form__file-label">
+                                <img src="img/icons/paperclip.svg" alt="Прикрепить" width="18" height="20">
+                                Прикрепить файл
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="order-form__submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__copyright">
+                © 2018 «LOREMIPSUM.NET» Все права защищены.
+            </div>
+            
+            <div class="footer__payments payments">
+                <span class="payments__item">
+                    <img src="img/icons/qiwi.svg" alt="Qiwi" width="20" height="20">
+                    Qiwi wallet
+                </span>
+                <span class="payments__item">
+                    <img src="img/icons/yandex-money.svg" alt="Yandex Money" width="20" height="20">
+                    Yandex Money
+                </span>
+                <span class="payments__item">
+                    <img src="img/icons/web-money.svg" alt="Web Money" width="20" height="20">
+                    Web Money
+                </span>
+            </div>
+            
+            <div class="footer__contacts contacts">
+                <a href="mailto:info@ipsum228.com" class="contacts__item">
+                    <img src="img/icons/email-footer.svg" alt="Email" width="20" height="20">
+                    info@ipsum228.com
+                </a>
+                <a href="#" class="contacts__item">
+                    <img src="img/icons/vk.svg" alt="Вконтакте" width="20" height="20">
+                    Мы вконтакте
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // Навигация
+        const navLinks = document.querySelectorAll('.nav__link');
+        const header = document.querySelector('.header');
+        const burger = document.querySelector('.header__burger');
+        const mobileNav = document.querySelector('.nav');
+        
+        const savedActive = localStorage.getItem('activeNavLink');
+        
+        function setActiveLink(activeLink) {
+            navLinks.forEach(link => {
+                link.classList.remove('nav__link--active');
+            });
+            if (activeLink) {
+                activeLink.classList.add('nav__link--active');
+                const linkText = activeLink.textContent.trim();
+                localStorage.setItem('activeNavLink', linkText);
+            }
+        }
+        
+        if (savedActive) {
+            navLinks.forEach(link => {
+                if (link.textContent.trim() === savedActive) {
+                    setActiveLink(link);
+                }
+            });
+        }
+        
+        // Прокрутка
+        function scrollToElement(targetId) {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerHeight = header ? header.offsetHeight : 0;
+                const targetPosition = targetElement.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                scrollToElement(targetId);
+
+                setActiveLink(this);
+
+                if (burger && mobileNav && mobileNav.classList.contains('active')) {
+                    mobileNav.classList.remove('active');
+                    burger.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
+        });
+        
+        // Бургер меню
+        if (burger && mobileNav) {
+            burger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileNav.classList.toggle('active');
+                burger.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!mobileNav.contains(e.target) && !burger.contains(e.target)) {
+                    mobileNav.classList.remove('active');
+                    burger.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
+        }
+        
+        // Селектор
+        const customSelects = document.querySelectorAll('.custom-select');
+        
+        customSelects.forEach(select => {
+            const headerEl = select.querySelector('.custom-select__header');
+            const dropdown = select.querySelector('.custom-select__dropdown');
+            const arrow = select.querySelector('.custom-select__arrow');
+            const selectedSpan = select.querySelector('.custom-select__selected');
+            const items = select.querySelectorAll('.custom-select__item');
+            const nativeSelect = select.closest('.order-form__group').querySelector('.order-form__select-native');
+            const list = select.querySelector('.custom-select__list');
+            const scrollThumb = select.querySelector('.custom-select__scrollbar-thumb');
+            const scrollTrack = select.querySelector('.custom-select__scrollbar-track');
+            
+            function updateScrollThumb() {
+                if (!list || !scrollThumb || !scrollTrack) return;
+                
+                const listHeight = list.clientHeight;
+                const scrollHeight = list.scrollHeight;
+                const scrollTop = list.scrollTop;
+                const trackHeight = scrollTrack.clientHeight;
+                const thumbHeight = scrollThumb.clientHeight;
+                const maxThumbTop = trackHeight - thumbHeight;
+                const maxScrollTop = scrollHeight - listHeight;
+                const scrollPercent = maxScrollTop > 0 ? scrollTop / maxScrollTop : 0;
+                
+                scrollThumb.style.top = (scrollPercent * maxThumbTop) + 'px';
+            }
+            
+            headerEl.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('open');
+                headerEl.classList.toggle('active');
+                arrow.classList.toggle('rotated');
+                if (dropdown.classList.contains('open')) setTimeout(updateScrollThumb, 10);
+            });
+            
+            if (list && scrollThumb) list.addEventListener('scroll', updateScrollThumb);
+            
+            if (scrollThumb && scrollTrack && list) {
+                let isDragging = false, startY = 0, startTop = 0;
+                
+                scrollThumb.addEventListener('mousedown', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isDragging = true;
+                    startY = e.clientY;
+                    startTop = parseFloat(this.style.top) || 0;
+                    
+                    document.addEventListener('mousemove', onMouseMove);
+                    document.addEventListener('mouseup', onMouseUp);
+                });
+                
+                function onMouseMove(e) {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                    
+                    const trackHeight = scrollTrack.clientHeight;
+                    const thumbHeight = scrollThumb.clientHeight;
+                    const maxThumbTop = trackHeight - thumbHeight;
+                    const deltaY = e.clientY - startY;
+                    let newTop = startTop + deltaY;
+                    newTop = Math.max(0, Math.min(newTop, maxThumbTop));
+                    
+                    scrollThumb.style.top = newTop + 'px';
+                    
+                    const scrollPercent = newTop / maxThumbTop;
+                    const listHeight = list.clientHeight;
+                    const scrollHeight = list.scrollHeight;
+                    const maxScrollTop = scrollHeight - listHeight;
+                    list.scrollTop = scrollPercent * maxScrollTop;
+                }
+                
+                function onMouseUp() {
+                    isDragging = false;
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                }
+            }
+            
+            items.forEach(item => {
+                item.addEventListener('click', function() {
+                    const value = this.dataset.value;
+                    const text = this.textContent;
+                    
+                    selectedSpan.textContent = text;
+                    if (nativeSelect) nativeSelect.value = value;
+                    
+                    items.forEach(i => i.classList.remove('selected'));
+                    this.classList.add('selected');
+                    
+                    dropdown.classList.remove('open');
+                    headerEl.classList.remove('active');
+                    arrow.classList.remove('rotated');
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!select.contains(e.target)) {
+                    dropdown.classList.remove('open');
+                    headerEl.classList.remove('active');
+                    arrow.classList.remove('rotated');
+                }
+            });
+        });
+        
+        // Процентный ползунок
+        const rangeInput = document.querySelector('.order-form__range');
+        const rangeValue = document.querySelector('.order-form__range-value');
+        
+        if (rangeInput && rangeValue) {
+            const updateRangeValue = () => rangeValue.textContent = rangeInput.value + '%';
+            rangeInput.addEventListener('input', updateRangeValue);
+            updateRangeValue();
+        }
+        
+        // Анимации при скролле
+        // Анимация шагов
+        const stepItems = document.querySelectorAll('.steps__item');
+        const stepsWrapper = document.querySelector('.steps-wrapper');
+        
+        if (stepItems.length && stepsWrapper) {
+            stepItems.forEach(item => {
+                item.classList.add('hidden');
+                item.classList.remove('visible');
+            });
+            
+            const stepsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const action = entry.isIntersecting ? 'add' : 'remove';
+                    stepItems.forEach(item => {
+                        item.classList[action]('visible');
+                        item.classList[action === 'add' ? 'remove' : 'add']('hidden');
+                    });
+                });
+            }, { threshold: 0.1 });
+            
+            stepsObserver.observe(stepsWrapper);
+        }
+        
+        // Анимация заголовка
+        const orderTitle = document.querySelector('.order__title');
+        if (orderTitle) {
+            orderTitle.style.cssText = 'opacity: 0; transform: translateY(20px); transition: all 0.6s ease';
+            
+            const titleObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const isVisible = entry.isIntersecting;
+                    entry.target.style.opacity = isVisible ? '1' : '0';
+                    entry.target.style.transform = isVisible ? 'translateY(0)' : 'translateY(20px)';
+                });
+            }, { threshold: 0.1 });
+            
+            titleObserver.observe(orderTitle);
+        }
+        
+        // Анимация формы
+        const formElements = document.querySelectorAll('.order-form__group, .order-form__range-wrapper, .order-form__submit');
+        const orderForm = document.querySelector('.order-form');
+        
+        if (formElements.length && orderForm) {
+            formElements.forEach(item => {
+                item.style.cssText = 'opacity: 0; transform: translateY(15px); transition: all 0.4s ease';
+            });
+            
+            const formObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        formElements.forEach((el, i) => {
+                            setTimeout(() => {
+                                el.style.opacity = '1';
+                                el.style.transform = 'translateY(0)';
+                            }, i * 100);
+                        });
+                    } else {
+                        formElements.forEach(el => {
+                            el.style.opacity = '0';
+                            el.style.transform = 'translateY(15px)';
+                        });
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            formObserver.observe(orderForm);
+        }
+        
+        // Анимация текста при скролле
+        const heroText = document.querySelector('.promo__container');
+        if (heroText) {
+            heroText.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                if (scrollPosition > 100) {
+                    const opacity = Math.max(0, 1 - (scrollPosition - 100) / 300);
+                    const translateY = Math.min(50, (scrollPosition - 100) / 5);
+                    heroText.style.opacity = opacity;
+                    heroText.style.transform = `translateY(-${translateY}px)`;
+                } else {
+                    heroText.style.opacity = 1;
+                    heroText.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        // Анимации отдельных элементов
+        // Иконки шагов
+        document.querySelectorAll('.steps__icon').forEach(icon => {
+            icon.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+            icon.addEventListener('mouseenter', () => {
+                icon.style.transform = 'scale(1.05) rotate(2deg)';
+                icon.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+            });
+            icon.addEventListener('mouseleave', () => {
+                icon.style.transform = 'scale(1) rotate(0deg)';
+                icon.style.boxShadow = 'none';
+            });
+        });
+        
+        // Кнопки
+        document.querySelectorAll('.button').forEach(btn => {
+            btn.style.transition = 'transform 0.2s ease, box-shadow 0.2s ease';
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'scale(1.03)';
+                btn.style.boxShadow = '0 5px 15px rgba(62, 156, 220, 0.4)';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'scale(1)';
+                btn.style.boxShadow = 'none';
+            });
+        });
+        
+        // Иконки платежных систем
+        document.querySelectorAll('.payments__item img').forEach(icon => {
+            icon.style.transition = 'transform 0.3s ease, filter 0.3s ease';
+            icon.addEventListener('mouseenter', () => {
+                icon.style.transform = 'scale(1.2) rotate(5deg)';
+                icon.style.filter = 'brightness(1.2)';
+            });
+            icon.addEventListener('mouseleave', () => {
+                icon.style.transform = 'scale(1) rotate(0deg)';
+                icon.style.filter = 'brightness(1)';
+            });
+        });
+        
+        // Подчеркивание ссылок меню
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.style.position = 'relative';
+            const underline = document.createElement('span');
+            underline.style.cssText = 'position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #3E9CDC; transition: width 0.3s ease';
+            link.appendChild(underline);
+            
+            link.addEventListener('mouseenter', () => underline.style.width = '100%');
+            link.addEventListener('mouseleave', () => underline.style.width = '0');
+        });
+        
+        // Демо-режим для формы
+        const submitForm = document.querySelector('.order-form');
+        if (submitForm) {
+            submitForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Форма отправлена (демо-режим)');
+            });
+        }
+        
+    });
+</script>

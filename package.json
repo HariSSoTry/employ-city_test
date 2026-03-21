@@ -1,0 +1,19 @@
+{
+  "name": "employ-city_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch scss:css",
+    "serve": "live-server",
+    "start": "concurrently \"npm run watch:sass\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "sass": "^1.98.0"
+  }
+}
